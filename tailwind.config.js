@@ -13,6 +13,8 @@ export default {
         'light-grayish-blue': 'var(--light-grayish-blue)',
         'white': 'var(--white)',
         'black': 'var(--black)',
+        'orange': 'var(--orange)',
+        'pale-orange': 'var(--pale-orange)'
       }
     },
   },

@@ -3,9 +3,9 @@ import './header.scss'
 
 const Header = () => {
     return (
-        <header>
+        <header className="app-header">
             {headerItems.map(wrapper => 
-                <div className={'header-' + wrapper.pos}>
+                <div className={'header-' + wrapper.pos} key={wrapper.pos}>
                     {wrapper.items.map(item => 
                         <button className="header-item-button" key={item.path}>
                             <a className="header-item-link" href={item.path}>

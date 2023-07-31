@@ -1,11 +1,18 @@
 import './App.scss'
 import Header from '../components/header/header'
+import ImageGallery from '../components/imageGallery/imageGallery'
+import ProductDetails from '../components/productDetails/productDetails'
+import { productProps } from '../helpers/enums'
 
 function App() {
 
   return (
     <>
       <Header />
+      <main className='app-main-section'>
+        <ImageGallery images={productProps.images}/>
+        <ProductDetails product={productProps} />
+      </main>
     </>
   )
 }
@@ -14,17 +21,6 @@ export default App
 
 
 /* //* App Content
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
 
   0
   Add to cart

@@ -1,0 +1,39 @@
+.product-details{
+    @apply flex flex-col flex-[1.5_0_1px] px-9 py-20;
+
+    *{
+        @apply w-[60%];
+    }
+
+    .product-brand{
+        @apply uppercase font-bold text-orange tracking-widest text-lg mb-6;
+    }
+
+    .product-name{
+        @apply font-bold text-black text-5xl mb-10;
+    }
+
+    .product-description{
+        @apply leading-7 mb-10 tracking-wide text-justify;
+    }
+
+    .product-price-wrapper{
+        @apply grid grid-cols-2 w-[40%] gap-y-2;
+
+        span{
+            @apply w-max;
+        }
+
+        .product-price{
+            @apply font-bold text-3xl text-black;
+        }
+
+        .product-old-price{
+            @apply text-lg font-bold text-grayish-blue line-through;
+        }
+
+        .product-discount-badge{
+            @apply font-bold bg-pale-orange text-orange w-16 flex items-center justify-center rounded-md;
+        }
+    }
+}

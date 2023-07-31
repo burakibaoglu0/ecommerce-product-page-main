@@ -12,6 +12,8 @@
         --light-grayish-blue: #f7f8fd;
         --white: #ffffff;
         --black: #000000;
+        --orange: #ff7d1a;
+        --pale-orange: #ffede0;
     }
 }
 
@@ -23,4 +25,8 @@
 html,
 body {
     @apply w-full h-full min-h-screen;
+}
+
+.app-main-section{
+    @apply container m-auto h-full px-10 py-9 flex gap-x-20;
 }

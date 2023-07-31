@@ -1,0 +1,27 @@
+.image-gallery{
+    @apply w-full h-full gap-8 px-9 py-10 flex flex-col flex-[1_0_1px] overflow-hidden;
+
+    &__main-image{
+        @apply w-full h-auto aspect-square rounded-lg cursor-pointer;
+    }
+
+    &__images{
+        @apply flex w-full h-auto flex-[0_0_auto] gap-8 overflow-hidden;
+
+        .image-gallery__image-wrapper{
+            @apply w-[calc(25%-1.5rem)] h-auto rounded-lg border-2 border-solid border-transparent transition-colors overflow-hidden cursor-pointer;
+
+            img{
+                @apply w-full h-full transition-colors;
+            }
+
+            &.selected{
+                @apply border-orange;
+
+                img{
+                    @apply opacity-40;
+                }
+            }
+        }
+    }
+}
