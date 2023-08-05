@@ -1,8 +1,8 @@
 .product-details{
     @apply flex flex-col flex-[1.5_0_1px] px-9 py-20;
 
-    *{
-        @apply w-[60%];
+    *:not(.product-add-to-cart-area *){
+        @apply w-3/5;
     }
 
     .product-brand{
@@ -18,7 +18,7 @@
     }
 
     .product-price-wrapper{
-        @apply grid grid-cols-2 w-[40%] gap-y-2;
+        @apply grid grid-cols-2 w-2/5 gap-y-2 mb-10;
 
         span{
             @apply w-max;
@@ -36,4 +36,8 @@
             @apply font-bold bg-pale-orange text-orange w-16 flex items-center justify-center rounded-md;
         }
     }
+
+    .product-add-to-cart-area {
+        @apply flex w-3/5 items-center gap-[30px]
+      }
 }

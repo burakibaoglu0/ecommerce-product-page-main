@@ -1,0 +1,11 @@
+.add-to-cart-quantity-box {
+  @apply bg-light-grayish-blue w-[120px] h-[50px] flex items-center p-2.5 rounded-lg;
+
+  button{
+    @apply cursor-pointer inline-flex items-center justify-center bg-light-grayish-blue flex-[0_0_20px];
+  }
+
+  input{
+    @apply bg-light-grayish-blue cursor-auto w-auto max-w-[50px] text-center font-bold flex-grow
+  }
+}

@@ -1,4 +1,5 @@
 import { IProduct } from "../../helpers/types";
+import QuantityBox from "../quantityBox/quantityBox";
 import './productDetails.scss';
 
 const calcDiscount = (price:number,oldPrice:number) => {
@@ -30,6 +31,9 @@ const ProductDetails = (props: {product:IProduct}) => {
                 <span className="product-old-price">{oldPriceText(props.product.oldPrice,props.product.currency)}</span>
                 }
             </div>
+            <div className="product-add-to-cart-area">
+                <QuantityBox />
+        </div>
         </div>
     )
 }
