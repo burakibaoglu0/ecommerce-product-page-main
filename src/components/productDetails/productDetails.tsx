@@ -1,6 +1,8 @@
 import { IProduct } from "../../helpers/types";
 import QuantityBox from "../quantityBox/quantityBox";
 import './productDetails.scss';
+import BiButton from "../button/button";
+import cartIcon from '../../assets/images/icon-cart.svg';
 
 const calcDiscount = (price:number,oldPrice:number) => {
     if(price > oldPrice) return 0;
@@ -33,6 +35,12 @@ const ProductDetails = (props: {product:IProduct}) => {
             </div>
             <div className="product-add-to-cart-area">
                 <QuantityBox />
+                <BiButton buttonText="Add to cart" hasIcon={true} iconSrc={cartIcon} buttonStyle={{
+                    background: 'var(--orange)',
+                    color: 'var(--white)',
+                    fontWeight: 'bold',
+                    boxShadow: '0px 6px 12px 4px var(--pale-orange)'
+                }} />
         </div>
         </div>
     )

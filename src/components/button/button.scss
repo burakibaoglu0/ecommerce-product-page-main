@@ -1,0 +1,7 @@
+.bi-button{
+  @apply flex items-center justify-center gap-2.5 py-2.5 px-5 min-w-[240px] min-h-[50px] rounded-lg;
+
+  .bi-button-icon{
+    @apply w-6 h-6;
+  }
+}
